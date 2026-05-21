@@ -1,7 +1,7 @@
 from datasets import load_dataset
 
 def load_data():
-    dataset = load_dataset("financial_phrasebank", "sentences_allagree")
+    dataset = load_dataset("financial_phrasebank", "sentences_allagree",trust_remote_code=True)
     data = dataset["train"]
     
     texts = data["sentence"]
